@@ -36,8 +36,6 @@ func Load() (*Config, error) {
 		return nil, fmt.Errorf("RABBITMQ_URL is required")
 	}
 
-	fmt.Printf("Email Service config loaded | RabbitMQ: %s\n", cfg.RabbitMQ.URL)
-
 	return &cfg, nil
 }
 
